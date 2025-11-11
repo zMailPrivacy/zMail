@@ -1,16 +1,16 @@
-# ZMail — Private Messaging on Zcash
+# Zmail — Private Messaging on Zcash
 
 ### _Zero-knowledge messaging through shielded transactions._
 
-ZMail is a **self-custodial, privacy-first messaging application** built on the Zcash shielded blockchain. Send and receive encrypted messages through Zcash shielded transactions with complete zero-knowledge privacy — no servers, no metadata, no tracking.
+Zmail is a **self-custodial, privacy-first messaging application** built on the Zcash shielded blockchain. Send and receive encrypted messages through Zcash shielded transactions with complete zero-knowledge privacy — no servers, no metadata, no tracking.
 
-**⚠️ Configuration Template**: ZMail requires users to provide their own Zcash RPC node (local zcashd or public provider) to send transactions. This is a configuration template — users must set up their own node or find an available RPC provider.
+**⚠️ Configuration Template**: Zmail requires users to provide their own Zcash RPC node (local zcashd or public provider) to send transactions. This is a configuration template — users must set up their own node or find an available RPC provider.
 
 ---
 
 ## Core Architecture
 
-ZMail is built using **Next.js** for both frontend and backend logic, with **direct integration** to a user-configured Zcash RPC node (local zcashd or public provider) for transaction building and broadcasting.
+Zmail is built using **Next.js** for both frontend and backend logic, with **direct integration** to a user-configured Zcash RPC node (local zcashd or public provider) for transaction building and broadcasting.
 
 **Stack Overview:**
 
@@ -26,7 +26,7 @@ ZMail is built using **Next.js** for both frontend and backend logic, with **dir
 ```
 User (Browser)
     ↓
-ZMail UI (Next.js)
+Zmail UI (Next.js)
     ↓
 API Proxy (/api/zcash/rpc)
     ↓
@@ -43,9 +43,9 @@ Zcash Blockchain
 
 * **Zero-Knowledge Privacy**: Messages sent via Zcash shielded transactions hide sender, receiver, and transaction amounts
 * **Groth16 Proofs**: Zcash's zero-knowledge proofs ensure complete privacy without revealing transaction details
-* **No Metadata Leakage**: Unlike traditional messaging apps, ZMail doesn't expose who you're talking to or when
+* **No Metadata Leakage**: Unlike traditional messaging apps, Zmail doesn't expose who you're talking to or when
 * **Self-Custodial**: Your keys, your control — private keys encrypted and stored locally
-* **No Servers**: ZMail runs entirely client-side — no backend servers, no data collection
+* **No Servers**: Zmail runs entirely client-side — no backend servers, no data collection
 * **No Accounts**: No email, phone number, or registration required
 * **End-to-End Encryption**: Messages encrypted with NaCl before being sent
 
@@ -120,12 +120,12 @@ rpcallowip=127.0.0.1
 
 **Security Note**: Use a strong password for `rpcpassword`. This password will be used to authenticate with zcashd.
 
-### Step 3: Install ZMail
+### Step 3: Install Zmail
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/ZMail.git
-   cd ZMail
+   git clone https://github.com/yourusername/Zmail.git
+   cd Zmail
    ```
 
 2. **Install dependencies**
@@ -133,7 +133,7 @@ rpcallowip=127.0.0.1
    npm install
    ```
 
-3. **Start ZMail**
+3. **Start Zmail**
    ```bash
    # Windows
    .\start-all.bat
@@ -147,7 +147,7 @@ rpcallowip=127.0.0.1
 
 ### Step 4: Configure Your RPC Node Connection
 
-1. In ZMail, go to **Settings** (gear icon)
+1. In Zmail, go to **Settings** (gear icon)
 2. Under **Node Configuration**:
    * Enable the node toggle
    * Enter RPC Endpoint: Your node's endpoint (e.g., `http://localhost:8232` for local zcashd, or your provider's URL)
@@ -187,7 +187,7 @@ rpcallowip=127.0.0.1
 
 ### Message Receiving Flow
 
-1. **Blockchain Scanning**: ZMail automatically scans the blockchain for incoming transactions
+1. **Blockchain Scanning**: Zmail automatically scans the blockchain for incoming transactions
 2. **Trial Decryption**: Uses your viewing key to decrypt memo fields
 3. **Message Display**: Decrypted messages appear in your conversations
 4. **Real-time Updates**: New messages appear automatically as they're confirmed
@@ -246,7 +246,7 @@ npm start
 ### Project Structure
 
 ```
-ZMail/
+Zmail/
 ├── app/                    # Next.js app directory
 │   ├── chat/               # Chat/messaging interface
 │   ├── contacts/           # Contact management
@@ -335,16 +335,16 @@ ZMail/
 * **Multi-Chain Support**: Extend to other privacy-focused blockchains
 * **Decentralized Identity**: Integration with decentralized identity systems
 * **Message Routing**: Advanced routing for better privacy
-* **SDK Development**: Developer SDK for building on ZMail
+* **SDK Development**: Developer SDK for building on Zmail
 
 ---
 
 ## Current Status
 
 **MVP Complete**  
-ZMail is fully functional and ready for use. All core features are implemented and tested.
+Zmail is fully functional and ready for use. All core features are implemented and tested.
 
-Stay updated: [GitHub Repository](https://github.com/ZMailPrivacy/ZMail)
+Stay updated: [GitHub Repository](https://github.com/ZmailPrivacy/Zmail)
 
 ---
 
@@ -356,7 +356,7 @@ Stay updated: [GitHub Repository](https://github.com/ZMailPrivacy/ZMail)
 2. **Key Backup**: Securely back up your viewing and spending keys
 3. **Local Storage**: Keys are stored locally — protect your device
 4. **Network Security**: Only use zcashd RPC on trusted networks
-5. **Regular Updates**: Keep zcashd and ZMail updated
+5. **Regular Updates**: Keep zcashd and Zmail updated
 
 ### Limitations
 
@@ -376,7 +376,7 @@ MIT License
 ## Support
 
 For issues, questions, or contributions:
-* **GitHub Issues**: [Report a bug or request a feature](https://github.com/ZMailPrivacy/ZMail/issues)
+* **GitHub Issues**: [Report a bug or request a feature](https://github.com/ZmailPrivacy/Zmail/issues)
 * **Documentation**: Check this README and code comments
 
 ---
@@ -390,6 +390,6 @@ For issues, questions, or contributions:
 ---
 
 > "Private messaging meets zero-knowledge privacy."  
-> — _ZMail Team_
+> — _Zmail Team_
 
-**⚠️ Disclaimer**: ZMail is provided as-is. Users are responsible for securing their keys and understanding the risks of blockchain transactions. Always verify transactions and addresses before sending.
+**⚠️ Disclaimer**: Zmail is provided as-is. Users are responsible for securing their keys and understanding the risks of blockchain transactions. Always verify transactions and addresses before sending.
