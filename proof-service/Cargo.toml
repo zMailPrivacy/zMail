@@ -1,0 +1,20 @@
+[package]
+name = "zcash-proof-service"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.4"
+actix-cors = "0.7"
+actix-rt = "2.9"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+zcash_primitives = "0.15"
+zcash_proofs = "0.15"
+# zcash_client_backend = "0.15"  # Commented out - causes dependency conflicts, will add when implementing full transaction building
+tokio = { version = "1.35", features = ["full"] }
+reqwest = { version = "0.11", features = ["json"] }
+hex = "0.4"
+dirs = "5.0"
+base58 = "0.2"
+

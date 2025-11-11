@@ -1,0 +1,59 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+.env
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea
+
+# OS
+Thumbs.db
+
+# Zcash proving parameters (large files, ~1.5GB)
+/params/
+
+# Zcash node data (blockchain data, wallet files, configs with passwords)
+/zcash_data/
+
+# Rust build artifacts
+/target/
+**/target/
+
+# Rust lock files (optional - some projects commit these)
+# Cargo.lock
+

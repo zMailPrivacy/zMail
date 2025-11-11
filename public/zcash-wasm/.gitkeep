@@ -1,0 +1,8 @@
+# This directory will contain the compiled WASM files
+# After running .\scripts\build-groth16-wasm.ps1, the following files will be here:
+# - zcash_wasm.js
+# - zcash_wasm_bg.wasm
+# - zcash_wasm_bg.wasm.d.ts
+# - zcash_wasm.d.ts
+# - package.json
+

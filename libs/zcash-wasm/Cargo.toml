@@ -1,0 +1,28 @@
+[package]
+name = "zcash-wasm"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+console_error_panic_hook = "0.1"
+zcash_primitives = { version = "0.15", features = ["transparent-inputs"] }
+zcash_proofs = "0.15"
+zcash_client_backend = "0.15"
+rand = "0.8"
+getrandom = { version = "0.2", features = ["js"] }
+hex = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde-wasm-bindgen = "0.6"
+js-sys = "0.3"
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+getrandom = { version = "0.2", features = ["js"] }
+
+[profile.release]
+opt-level = "z"
+lto = true
+

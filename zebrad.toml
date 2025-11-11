@@ -1,0 +1,4 @@
+[rpc]
+listen_addr = "0.0.0.0:8232"
+enable_cookie_auth = false
+
