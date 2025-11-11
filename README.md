@@ -84,7 +84,7 @@ Zcash Blockchain
 
 * **Node.js** 20+ LTS ([Download](https://nodejs.org/))
 * **Zcash RPC Node** — You must provide your own:
-  * Local zcashd node with RPC enabled ([Download](https://z.cash/downloads/)), OR
+  * Local zcashd node with RPC enabled ([Download](https://z.cash/download/)), OR
   * Public RPC provider (if available)
 * **Modern Browser** (Chrome 120+, Firefox 120+, Safari 17+)
 
@@ -92,7 +92,7 @@ Zcash Blockchain
 
 **Option A: Local zcashd Node (Recommended)**
 
-1. Download zcashd from [z.cash/downloads](https://z.cash/downloads/)
+1. Download zcashd from [z.cash/downloads](https://z.cash/download/)
 2. Install and start zcashd
 3. Wait for zcashd to sync with the Zcash network (this can take several hours on first run)
 
